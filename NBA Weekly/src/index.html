@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="styles.css">
+
+    <title>NBA Weekly</title>
+    
+    <style type="text/css"> #main-header{
+        text-align: center;
+        background-color:  #0066ff;
+        color: white;
+        padding: 10px;
+    }
+
+    #main-footer{
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <!--Header-->
+    <header id="main-header">
+        <h1>NBA Weekly</h1>
+    </header>
+    <br>
+    <!--NBA Logo-->
+    <a href="images/NBAlogo.jpg">
+        <img src="images/NBAlogo.jpg" alt="NBA Logo" class="center"> 
+    </a>
+    <!--link to MVP page-->
+    <a href="MVP.html">MVP 2011-2021</a>
+    <hr>
+  
+    <!--Content list-->
+    <h3>Content</h3>
+    <ul>
+        <li>NBA Playoff table</li>
+        <li>News</li>
+        <li>Subscribe to newsletter</li>
+    </ul>
+    <h3>Leading teans</h3>
+    <ol>
+        <li>Miluakee</li>
+        <li>Golden State Warriors</li>
+        <li>Lakers</li>
+    </ol>
+    <hr>
+    <!--NBA Playoff table-->
+    <h1>NBA Playoff Table</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Team</th>
+            <th>Standing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GSW VS MIL</td>
+            <td>2-3</td>
+        </tr>
+        <tr>
+            <td>LAL VS MIA</td>
+            <td>5-0</td>
+        </tr>
+        <tr>
+            <td>BRK VS BOS</td>
+            <td>2-2</td>
+        </tr>
+    </tbody>
+    </table>
+<br>
+<!--News header-->
+<hr>
+<h1>NEWS</h1>
+<!--Blog 1-->
+<section>
+    <article class="Post">
+        <h3>Russel Westbrook to the Lakers!</h3>
+        <small>Posted by Max Kellerman on July 16</small>
+        <p>
+            Russell Westbrook said he is joining a "championship-calibre" squad with the Los Angeles Lakers and knows it will be his responsibility to mesh with LeBron James and Anthony Davis on the NBA's latest super team.
+            Westbrook was formally introduced as a member of the Lakers at Staples Center on Tuesday alongside coach Frank Vogel and general manager Rob Pelinka.
+        </p>
+        <p>
+            Westbrook was formally introduced as a member of the Lakers at Staples Center on Tuesday alongside coach Frank Vogel and general manager Rob Pelinka.
+            Los Angeles acquired the star point guard from the Washington Wizards in a blockbuster deal first reported on the night of the NBA draft and finalised at the start of the new league year.
+        </p>
+    </article>
+    <article class="Post">
+        <h3>Doncic, Mavericks agree to five-year, $207m extension</h3>
+        <small>Posted by Steven A Smith on July 15</small>
+        <p>
+            Dallas Mavericks superstar guard Luka Doncic has agreed to terms on a five-year, $207m (£149.5m) supermax rookie extension, according to multiple US media outlets.The Mavericks announced they will hold a news conference on Tuesday in Ljubljana, Slovenia. Doncic and agent Bill Duffy, Mavericks owner Mark Cuban, general manager Nico Harrison and head coach Jason Kidd are expected to participate.
+        </p>
+    </article>
+    <article class="Post">
+        <h3>Kevin Durant stars as Team USA claim fourth straight Olympic gold medal</h3>
+        <small>Posted by Ronnel Salgado on July 14</small>
+        <p>
+            The Americans expected nothing less. And in the end, their Olympic reign continues.
+
+            Kevin Durant scored 29 points and joined Carmelo Anthony as the only three-time men's gold medallists in Olympic basketball history after the U.S. held off France 87-82 on Saturday morning in Saitama, ending a summer that started with sputters but closed with celebration.
+        </p>
+        <p>
+            Durant sealed it by knocking down two free throws with 8.8 seconds left, making the outcome academic. The lead was five, France's final possession was irrelevant, and it was over. The U.S. players gathered for a hug at midcourt, Durant, Bam Adebayo and Draymond Green wrapped themselves in American flags, and the journey was complete.
+        </p>
+    </article>
+</section>
+<hr>    
+<!--newsletter subscribe-->
+<h1>Subscribe to NBA Newsletter!</h1>
+<form action="process.php" method="POST">
+    <div>
+        <label>First Name</label>
+        <input type="text" name="first-Name" 
+        placeholder="Enter first name">
+    </div>
+<br>
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="last-Name" 
+        placeholder="Enter last name">
+    </div>
+<br>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" 
+        placeholder="Enter email">
+    </div>
+<br>
+    <div>
+        <label>Gender</label>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+<br>
+    <div>
+        <label>Age</label>
+        <input type="number" name="age" value="0">
+    </div>
+<br>
+    <div>
+        <label>Birthday:</label>
+        <input type="date" name="birthday">
+    </div>
+<br>
+<input type="submit" name="submit" value="submit">
+</form>
+<footer id="main-footer">
+    <p>Copyright &copy; 2017, NBA Weekly</p>
+</footer>
+</body>
+</html>
